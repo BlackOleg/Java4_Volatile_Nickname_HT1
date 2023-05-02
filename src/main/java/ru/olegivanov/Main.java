@@ -61,14 +61,14 @@ public class Main {
     }
 
     private static boolean isAscendingOrder(String text) {
-        for (int i = 0; i < text.length(); i++) {
+        for (int i = 1; i < text.length(); i++) {
             if (text.charAt(i) < text.charAt(i - 1)) return false;
         }
         return true;
     }
 
     private static boolean isSameChar(String text) {
-        for (int i = 0; i < text.length(); i++) {
+        for (int i = 1; i < text.length(); i++) {
             if (text.charAt(i) != text.charAt(i - 1)) return false;
         }
         return true;
